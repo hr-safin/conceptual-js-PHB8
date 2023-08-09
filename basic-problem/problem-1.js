@@ -1,0 +1,29 @@
+/*
+
+তোমাকে এমন একটা ফাংশন বানাতে হবে যেটা একটি সংখ্যা ইনপুট নিবে। function টির নাম হবেঃ isInteger()। আউটপুট হিসেবে একটি boolean রিটার্ন করবেঃ
+
+সংখ্যাটি integer হলে true রিটার্ন করবে। 
+অন্যথায় false রিটার্ন করবে।
+
+*/
+
+function isInteger(isInt){
+
+
+    if(typeof isInt !== "number"){
+        return "Provide a number"
+    }else{
+        if(Number.isInteger(isInt)){
+            return true
+        }
+          else{
+            return false
+          }
+    }
+   
+   
+}
+
+const stringOrInteger = "safin"
+const output = isInteger(stringOrInteger)
+console.log(output)
